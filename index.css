@@ -1,0 +1,150 @@
+/*police et fond*/
+*
+{
+	font-family: Arial;
+}
+
+nav{
+	margin: 0 auto;
+	position: sticky;
+
+}
+/*header*/
+header{
+	display: flex;
+	background: url('images/separateur.png') repeat-x bottom;
+	justify-content: space-between;
+
+}
+header h1
+{
+	font-size: 2.5em;
+	font-weight: normal;
+	margin: 0 0 0 10px;
+
+}
+#bloc_page{
+	width: 95%;
+	margin: auto;
+}
+h1 a{
+	text-decoration: none;
+	color: black;
+}
+/*menu et menu déroulant*/
+#menu_principal{
+	display: flex;
+	list-style-type: none;
+}
+#menu_principal li{
+	margin-right: 15px;
+}
+#menu_principal ul{
+	list-style-type: none;
+}
+#menu_principal a{
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+#menu_principal a:hover{
+	text-decoration: underline;
+}
+
+.sous_menu{
+display: flex;
+display: none;
+justify-content: space-between;
+padding: 5px;
+position: absolute;
+width: 100%
+z-index: 1000;
+text-align: left;
+left: 10px;
+opacity: 1;
+background-color: white
+}
+
+.sous_menu_div{
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	text-align: left;
+}
+
+.sous_menu_div h2{
+	text-align: center;
+}
+
+nav > ul li:hover .sous_menu{
+	display:block;
+	display: flex;
+	justify-content: space-between;
+}
+.categories li
+{
+	padding-bottom: 5px;
+}
+.besoin li {
+	padding-bottom: 5px;
+}
+
+/*Bannière*/
+#banniere_image_promotions
+{
+	margin-top: 15px;
+	height: 200px;
+	border-radius: 5px;
+	position: relative;/*ce que contient cette balise va se déplacer par rapport à la position de banniere_image_promotion*/
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-bottom: 25px;
+		z-index:-1;
+
+}
+#descriptions_promotions
+{
+	position: absolute;
+	bottom: 0;/*par rapport à banniere_image_promotion comme celle-ci est en position relative*/
+	border-radius: 0px 0px 5px 5px;
+	width: 99.5%;
+	height: 33px;
+	padding-top: 15px;
+	padding-left: 4px;
+	background-color: rgba(24,24,24,0.8);
+	font-size:0.8em;
+	color: white;
+}
+/*Section*/
+section ul
+{
+	list-style-type: none;
+}
+.conteneur
+{
+	display: flex;
+	margin-right:50px;
+}
+.element
+{
+	width: 250px;
+	padding : 5px 5px 5px 5px;
+	text-align: center;
+	/*card*/
+	padding-top: 15px;
+	/*margin-top: 15px;*/
+	/*height: 200px;*/
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-right: 15px;
+
+
+}
+.element img
+{
+	border: 1px solid #181818;
+}
+
+.element > a:hover img
+{
+	border: 5px solid #181818;
+}

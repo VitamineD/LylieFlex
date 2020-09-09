@@ -1,0 +1,123 @@
+/*police et fond*/
+*
+{
+	font-family: Arial;
+}
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+nav{
+	margin: 0 auto;
+	position: sticky;
+
+}
+/*header*/
+header{
+	display: flex;
+	background: url('images/separateur.png') repeat-x bottom;
+	justify-content: space-between;
+
+}
+header h1
+{
+	font-size: 2.5em;
+	font-weight: normal;
+	margin: 0 0 0 10px;
+}
+h1 a{
+	text-decoration: none;
+	color: black;
+}
+#bloc_page{
+	margin: auto;
+	padding: 0 15px;
+}
+/*menu et menu déroulant*/
+#menu_principal{
+	display: flex;
+	list-style-type: none;
+}
+#menu_principal li{
+	margin-right: 15px;
+}
+#menu_principal ul{
+	list-style-type: none;
+}
+#menu_principal a{
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+#menu_principal a:hover{
+	text-decoration: underline;
+}
+
+.sous_menu{
+display: flex;
+display: none;
+justify-content: space-between;
+padding: 5px;
+position: absolute;
+width: 100%
+z-index: 1000;
+text-align: left;
+left: 10px;
+opacity: 1;
+background-color: white
+}
+
+.sous_menu_div{
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	text-align: left;
+}
+
+.sous_menu_div h2{
+	text-align: center;
+}
+
+nav > ul li:hover .sous_menu{
+	display:block;
+	display: flex;
+	justify-content: space-between;
+}
+.categories li
+{
+	padding-bottom: 5px;
+}
+.besoin li {
+	padding-bottom: 5px;
+}
+/*Section*/
+
+section{
+	display: flex;
+	margin: 15px;
+}
+.produit{
+	margin-right:50px;
+}
+
+.old_price{
+	color:red;
+	text-decoration: line-through;
+}
+.produit p{
+	font-size: 1.4em;
+	text-align: center;
+}
+.produit{
+	text-align:center;
+}
+
+/*on cache les ingrédients tant qu'on ne clic pas dessus*/
+.toggle_ingredient{
+	display:none;
+}
+.reveal_ingredients{
+	color:black;
+	text-decoration: underline;
+}
