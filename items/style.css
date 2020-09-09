@@ -105,12 +105,13 @@ section{
 	color:red;
 	text-decoration: line-through;
 }
-.produit p{
+#produit p{
 	font-size: 1.4em;
 	text-align: center;
 }
-.produit{
+#produit{
 	text-align:center;
+	width: 500px;
 }
 
 /*on cache les ingrédients tant qu'on ne clic pas dessus*/
@@ -120,4 +121,61 @@ section{
 .reveal_ingredients{
 	color:black;
 	text-decoration: underline;
+}
+/*Galerie*/
+div#galerie
+{
+  width: 240px ;
+  height: 435px;
+  background: #eed ;
+  border: 1px solid #dcb ;
+  padding: 15px ;
+  margin: 15px 30px ;
+  text-align: center ;
+
+}
+
+ul#galerie_mini
+{
+  margin: 0 ;
+  padding: 0 ;
+  list-style-type: none ;
+}
+
+ul#galerie_mini li
+{
+  float: left ;
+}
+
+ul#galerie_mini li a img
+{
+  margin: 2px 1px ;
+  border: 1px solid #dcb ;
+}
+
+dl#photo
+{
+  clear: both ;
+  margin: 0 auto ;
+}
+
+dl#photo dt
+{
+  font: italic 2.5em/1.5em Georgia, serif ;
+  color: #dcb ;
+}
+
+dl#photo dd
+{
+  margin: 0 ;
+}
+
+dl#photo img
+{
+  border: 1px solid #dcb ;
+}
+
+section{
+	text-align: justify;
+	padding: 15px;
 }
