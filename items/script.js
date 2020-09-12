@@ -23,3 +23,5 @@ function displayPics()
 
 // Il ne reste plus qu'à appeler notre fonction au chargement de la page
 window.onload = displayPics;
+
+/*script pour afficher/cacher les ingrédients*/
