@@ -124,19 +124,40 @@ section ul
 	display: flex;
 	margin-right:50px;
 }
+/*card*/
 .element
 {
+	height: 425px;
 	width: 250px;
 	padding : 5px 5px 5px 5px;
 	text-align: center;
+	/*card*/
+	padding-top: 15px;
+	/*margin-top: 15px;*/
+	/*height: 200px;*/
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-right: 15px;
+	transition-property: box-shadow;
+	transition-duration: 0.2s;
+
+		
 
 }
+
 .element img
 {
 	border: 1px solid #181818;
 }
 
-.element > a:hover img
-{
-	border: 5px solid #181818;
+.element:hover{
+	box-shadow: 2px 6px 6px #1c1a19;
+}
+.link_photos{
+	text-decoration: none;
+	color: black;
+}
+.reduction{
+	text-decoration: line-through;
+	color: red;
 }
