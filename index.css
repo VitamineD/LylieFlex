@@ -144,7 +144,18 @@ section ul
 	height: 450px;
 }
 .too_little_element2{
-	height: 480px;
+	height: 485px;
+}
+.images_cards{
+	width: 100%;
+	height: 85%;
+
+}
+.paypal_button{
+	height:15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 .element img
 {
