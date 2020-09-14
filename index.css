@@ -123,6 +123,8 @@ section ul
 {
 	display: flex;
 	margin-right:50px;
+	flex-wrap: wrap;
+	width :100%;
 }
 .element
 {
@@ -132,7 +134,7 @@ section ul
 	text-align: center;
 	/*card*/
 	padding-top: 15px;
-	/*margin-top: 15px;*/
+	margin-bottom: 15px;
 	/*height: 200px;*/
 	border-radius: 5px;
 	box-shadow: 0px 4px 4px #1c1a19;
@@ -143,9 +145,7 @@ section ul
 .too_little_element1{
 	height: 450px;
 }
-.too_little_element2{
-	height: 485px;
-}
+
 .images_cards{
 	width: 100%;
 	height: 85%;
