@@ -3,11 +3,7 @@
 {
 	font-family: Arial;
 }
-body{
-	padding: 0;
-	margin: 0;
-	width: 100%;
-}
+
 nav{
 	margin: 0 auto;
 	position: sticky;
@@ -31,8 +27,8 @@ h1 a{
 	color: black;
 }
 #bloc_page{
+	width: 95%;
 	margin: auto;
-	padding: 0 15px;
 }
 /*menu et menu déroulant*/
 #menu_principal{
@@ -96,6 +92,8 @@ nav > ul li:hover .sous_menu{
 section{
 	display: flex;
 	margin: 15px;
+	text-align: justify;
+	padding: 15px;
 }
 .produit{
 	margin-right:50px;
@@ -173,9 +171,4 @@ dl#photo dd
 dl#photo img
 {
   border: 1px solid #dcb ;
-}
-
-section{
-	text-align: justify;
-	padding: 15px;
 }
