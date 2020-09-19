@@ -99,20 +99,15 @@ nav > ul li:hover .sous_menu{
 	box-shadow: 0px 4px 4px #1c1a19;
 	margin-bottom: 25px;
 		z-index:-1;
+		background-color: black;
+		color:white;
+		padding:10px;
+		
 
 }
-#descriptions_promotions
-{
-	position: absolute;
-	bottom: 0;/*par rapport à banniere_image_promotion comme celle-ci est en position relative*/
-	border-radius: 0px 0px 5px 5px;
-	width: 99.5%;
-	height: 33px;
-	padding-top: 15px;
-	padding-left: 4px;
-	background-color: rgba(24,24,24,0.8);
-	font-size:0.8em;
-	color: white;
+.livraison_gratuite{
+	font-weight: bold;
+	color:white;
 }
 /*Section*/
 section ul

@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.*)$ https://lylieflex.agenda-crna-n.com/$1 [R=301,L]
-#Redirect permanent / https://lylieflex.agenda-crna-n.com/
+RewriteRule ^(.*)$ https://lylieflex.com/$1 [R=301,L]
+#Redirect permanent / https://lylieflex.com/
