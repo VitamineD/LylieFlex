@@ -3,6 +3,8 @@
 	<head>
 		<meta charset = "utf-8"/>
 		<title>LylieFlex</title>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="../../css/style.css"/>
 
 	</head>
@@ -11,99 +13,81 @@
 		<div id="bloc_page">
 		
 					<header>
-				<h1><a href="../../index.html">Bienvenue sur LylieFlex</a></h1>
-				<nav>
-					<ul id="menu_principal">
-						<li><a href="../../index.html">Accueil</a></li>
-						<li class="deroulant"><a href="#">Visage &ensp;</a>
-							<ul class="sous_menu">
-								<div class="sous_menu_div">
-								<li><h2>Par catégories</h2></li>
-								<ul class="categories">
-									<li><a href="cremes_de_jour.html">Crèmes de jour</a></li>
-									<li><a href="contour_des_yeux.html">Contour des yeux</a></li>
-									<li><a href="serums.html">Sérums</a></li>
-									<li><a href="demaquillants_nettoyants.html">Démaquillants et nettoyants</a></li>
-									<li><a href="masques_et_exfoliants.html">Masques et Exfoliants</a></li>
-									<li><a href="soins_multifonction.html">Soins multifonction</a></li>
-									<li><a href="protections_solaires.html">Protections solaires</a></li>
-								</ul>
-							</div>
+		<h1><a href ="../../index.html">Bienvenue sur LylieFlex</a></h1>
 
-								<div class="sous_menu_div">
-								<li><h2>Par besoin</h2></li>
-								<ul class="besoin">
-									<li><a href="../besoin/hydratation_et_nutrition.html">Hydratation et Nutrition</a></li>
-									<li><a href="../besoin/lift_et_fermete.html">Lift et fermeté</a></li>
-									<li><a href="../besoin/rides_et_ridules.html">Rides et ridules</a></li>
-									<li><a href="../besoin/anti_age.html">Anti-Age</a></li>
-									<li><a href="../besoin/eclat.html">Eclat</a></li>
-									<li><a href="../besoin/regard_fatigue.html">Regard fatigué</a></li>
-									<li><a href="../besoin/parfaire_et_unifier.html">Parfaire et unifier</a></li>
-								</ul>
-							</div>
-							</ul>
-
+		<nav id="menu">
+			<ul id="nav">
+				<li><a href="../../index.html">Accueil</a></li>
+				<li><a href="#">Visage</a>
+					<ul>
+						<li><a href="#">Par catégories ➔</a>
+							<ul>
+								<li><a href="../categories/cremes_de_jour.html">Crèmes de jour</a></li>
+								<li><a href="../categories/contour_des_yeux.html">Contour des yeux</a></li>
+								<li><a href="../categories/serums.html">Sérums</a></li>
+								<li><a href="../categories/demaquillants_nettoyants.html">Démaquillants et nettoyants</a></li>
+								<li><a href="../categories/masques_et_exfoliants.html">Masques et Exfoliants</a></li>
+								<li><a href="../categories/soins_multifonction.html">Soins multifonction</a></li>
+								<li><a href="../categories/protections_solaires.html">Protections solaires</a></li>
+							</ul>	
 						</li>
-						<li class="deroulant"><a href="#">Yeux &ensp;</a>
-							<ul class="sous_menu">
-								<div class="sous_menu_div">
-								<li><h2>Par besoin</h2></li>
-								<ul class="categories">
-									<li><a href="../../yeux_products/regard_fatigue.html">Regard fatigué</a></li>
-									<li><a href="../../yeux_products/rides_et_ridules.html">Rides et ridules</a></li>
-									<li><a href="../../yeux_products/eclat.html">Eclat</a></li>
-									<li><a href="../../yeux_products/fortifiant_cils_sourcils.html">Fortifiant cils/ sourcils</a></li>
-								</ul>
-							</div>
-						</ul>
-					</li>
 
-						<li class="deroulant"><a href="#">Make-up &ensp;</a>
-							<ul class="sous_menu">
-								<div class="sous_menu_div">
-								<li><h2>Par catégories</h2></li>
-								<ul class="categories">
-									<li><a href="../../make_up_products/categories/bases_de_maquillage.html">Bases de maquillage</a></li>
-									<li><a href="../../make_up_products/categories/fluides_de_teint.html">Fluides de teint</a></li>
-									<li><a href="../../make_up_products/categories/demaquillant.html">Démaquillants</a></li>
-								</ul>
-							</div>
-							<div class="sous_menu_div">
-								<li><h2>Par besoin</h2></li>
-								<ul class="categories">
-									<li><a href="../../make_up_products/besoin/lisser.html">Lisser</a></li>
-									<li><a href="../../make_up_products/besoin/unifier_le_teint.html">Unifier</a></li>
-									<li><a href="../../make_up_products/besoin/parfaire_et_embellir.html">Parfaire et embellir</a></li>
-								</ul>
-							</div>
-						</ul>
-					</li>
-
-
-						<li class="deroulant"><a href="#">Corps &ensp;</a>
-							<ul class="sous_menu">
-								<div class="sous_menu_div">
-								<li><h2>Par catégories</h2></li>
-								<ul class="categories">
-									<li><a href="../../corps_products/soin_corps.html">Soins corps</a></li>
-									<li><a href="../../corps_products/solaires.html">Solaires</a></li>
-								</ul>
-							</div>
-						</ul>
-					</li>
-
-
-						<li><a href="#">Coffrets</a></li>
-						<li><a href="#">F.A.Q</a></li>
-						<li><a href="#">Contact</a></li>
-
-					</ul>
-                </nav>
-
-            </header>
+						<li><a href="#">Par Besoin ➔</a>
+							<ul>
+								<li><a href="hydratation_et_nutrition.html">Hydratation et Nutrition</a></li>
+								<li><a href="lift_et_fermete.html">Lift et fermeté</a></li>
+								<li><a href="rides_et_ridules.html">Rides et ridules</a></li>
+								<li><a href="anti_age.html">Anti-Age</a></li>
+								<li><a href="eclat.html">Eclat</a></li>
+								<li><a href="regard_fatigue.html">Regard fatigué</a></li>
+								<li><a href="parfaire_et_unifier.html">Parfaire et unifier</a></li>	
+							</ul>
+						</li>
+					</ul> 
+				</li>
 			
-						<div id="banniere_description">
+				<li><a href="#">Yeux</a>
+					<ul>
+						<li><a href="../../yeux_products/regard_fatigue.html">Regard fatigué</a></li>
+						<li><a href="../../yeux_products/rides_et_ridules.html">Rides et ridules</a></li>
+						<li><a href="../../yeux_products/eclat.html">Eclat</a></li>
+						<li><a href="../../yeux_products/fortifiant_cils_sourcils.html">Fortifiant cils/sourcils</a></li>
+					</ul>
+				</li> 
+
+				<li><a href="#">Make-up</a>
+					<ul>
+						<li><a href="#">Par Catégories ➔</a>
+						<ul>
+							<li><a href="../../make_up_products/categories/bases_de_maquillage.html">Bases de maquillage</a></li>
+							<li><a href="../../make_up_products/categories/fluides_de_teint.html">Fluides de teint</a></li>
+							<li><a href="../../make_up_products/categories/demaquillants.html">Démaquillants</a></li>
+						</ul></li>
+
+						<li><a href="#">Par Besoin ➔</a>
+							<ul>
+								<li><a href="../../../make_up_products/besoin/lisser.html">Lisser</a></li>
+								<li><a href="../../make_up_products/besoin/unifier_le_teint.html">Unifier</a></li>
+								<li><a href="../../make_up_products/besoin/parfaire_et_embellir.html">Parfaire et embellir</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li><a href="#">Corps</a>
+					<ul>
+						<li><a href="../../corps_products/soin_corps.html">Soins corps</a></li>
+						<li><a href="../../corps_products/solaires.html">Solaires</a></li>
+					</ul>
+				</li>
+
+				<li><a href="../../contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		</header>
+			
+						<div data-aos="zoom-in" id="banniere_description">
 							<h1>Eclat Parfait</h1>
 							<p>Nos soins anti-âge perfecteurs à la double technologie boostent l’éclat pour une belle peau au naturel grâce à une action sublimatrice jour après jour.</p>
 							
@@ -239,7 +223,9 @@
 
 
 
-
+<script>
+  AOS.init();
+</script>
 
 
 
