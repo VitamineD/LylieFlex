@@ -145,64 +145,6 @@ h1 a{
 	text-decoration: none;
 	color: black;
 }
-/*menu et menu déroulant*/
-#menu_principal{
-	display: flex;
-	list-style-type: none;
-}
-#menu_principal li{
-	margin-right: 15px;
-}
-#menu_principal ul{
-	list-style-type: none;
-}
-#menu_principal a{
-	display: block;
-	text-decoration: none;
-	color: black;
-}
-#menu_principal a:hover{
-	text-decoration: underline;
-}
-
-.sous_menu{
-display: flex;
-display: none;
-justify-content: space-between;
-padding: 5px;
-position: absolute;
-width: 100%
-z-index: 1000;
-text-align: left;
-left: 10px;
-opacity: 1;
-background-color: white
-}
-
-.sous_menu_div{
-	display: flex;
-	flex-direction: column;
-	margin: 5px;
-	text-align: left;
-}
-
-.sous_menu_div h2{
-	text-align: center;
-}
-
-nav > ul li:hover .sous_menu{
-	display:block;
-	display: flex;
-	justify-content: space-between;
-}
-.categories li
-{
-	padding-bottom: 5px;
-}
-.besoin li {
-	padding-bottom: 5px;
-}
-
 /*Bannière*/
 #banniere_image_promotions
 {
@@ -223,6 +165,17 @@ nav > ul li:hover .sous_menu{
 	font-weight: bold;
 	color:white;
 }
+/*Pour la page annonçant plus de stock*/
+.no_stock_warning
+{
+	font-weight: bold;
+	background-color: red;
+	color: white;
+}
+.no_stock{
+	font-weight: bold;
+	background-color: black;
+	color: white;}
 /*Section*/
 section ul
 {
