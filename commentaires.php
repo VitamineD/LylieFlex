@@ -82,12 +82,15 @@
 				</li>
 
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="commentaires.php">Commentaires</a></li>
+				<li><a href="commentaires.php">Avis Client</a></li>
 			</ul>
 		</nav>
 
 		</header>
 		<section class="commentaires">
+			<div data-aos="zoom-in" id="banniere_image_promotions">
+						<p>Votre avis nous intéresse !</br></br><span class ="livraison_gratuite"> N'hésitez pas à laisser un commentaire !</span><p>
+			</div>
 				<?php include("gestioncommentaires.php"); ?>
 			<!--  début du bloc commentaires, version 1.0  (06 novembre 2009)-->
 <script language="JavaScript" type="text/javascript">
