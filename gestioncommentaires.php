@@ -1,4 +1,5 @@
 <?php
+
 /* Fichier PHP: "gestioncommentaires.php"
 +------------------------------------------------------------------------------+
 | Extension pour une fonction "ajout de commentaires"                          |
@@ -67,13 +68,12 @@ $jeton= substr($jeton,0,10);
 //-----------------------------------------------------------------------------/
 /*========= Validation de la requête =========================================*/
 $valide= true;
-if ($sujet=='aucun') $valide= false;
-if ($action=='rien') $valide= false;
-if ($jeton=='0') $valide= false;
+
+
 if (!$valide) {
     // arret du script par sécurité si requête non valide
     exit;
-}  
+}
 /*========= Créations de fichiers si inexistants =============================*/
 $nomfichier_verrou= 'verrou_'.$sujet_r.'.txt';
 $nomfichier_messag= 'messages_'.$sujet_r.'.txt';

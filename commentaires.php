@@ -4,18 +4,14 @@
 		<meta charset = "utf-8"/>
 		<title>LylieFlex</title>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="commentaires.js"></script>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/index.css"/>
 	</head>
 
 	<body>
-		<div id="bloc_page">
+		<div id="bloc_page">        
+       
 
-			<?php 
-          include("gestioncommentaires.php"); 
-        ?>
-		
 					<header>
 		<h1><a href ="index.html">Bienvenue sur LylieFlex</a></h1>
 
@@ -91,17 +87,18 @@
 		</nav>
 
 		</header>
-			
+		<section class="commentaires">
+				<?php include("gestioncommentaires.php"); ?>
 			<!--  début du bloc commentaires, version 1.0  (06 novembre 2009)-->
 <script language="JavaScript" type="text/javascript">
     var sujet='general'; // les dix premiers caractères serviront d'identification de la liste des commentaires
     var adressebase='';  // base d'adressage pour le fichier PHP de gestion des commentaires
 </script>
 <div id="laisseruncommentaire">
-    <form name="commentaire_bouton" id="commentaire_form_A" action="" method="" onsubmit="return false;" style="display: Block">
+    <form name="commentaire_bouton" id="commentaire_form_A" action="gestioncommentaires.php" method="post" onsubmit="return false;" style="display: Block">
         <input type="button" value="laisser un commentaire" onclick="Affiche_form_B()">
     </form>
-    <form name="commentaire_saisie" id="commentaire_form_B" action="" method="" onsubmit="return false;" style="display: None">
+    <form name="commentaire_saisie" id="commentaire_form_B" action="gestioncommentaires.php" method="post" onsubmit="return false;" style="display: None">
 		<fieldset>
         <legend>Vous pouvez saisir un commentaire ...</legend>
 			Votre nom (<i><small>ou pseudo</small></i>):<br><input name="nom" type="text" size="20"><br>
@@ -117,12 +114,14 @@
 <script language="JavaScript" type="text/javascript" src="commentaires.js"></script>
 <!-- fin du bloc commentaires -->
 
-
+</section>
 <!--fin balise bloc_page -->
 		</div>
 
 <script>
   AOS.init();
 </script>
+
+
 	</body>
 	</html>

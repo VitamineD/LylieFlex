@@ -235,4 +235,6 @@ section ul
 	text-decoration: line-through;
 	color: red;
 }
-
+.commentaires{
+	padding : 20px;
+}
