@@ -4,14 +4,19 @@
 		<meta charset = "utf-8"/>
 		<title>LylieFlex</title>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="commentaires.js"></script>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/index.css"/>
 	</head>
 
 	<body>
 		<div id="bloc_page">
+
+			<?php 
+          include("gestioncommentaires.php"); 
+        ?>
 		
-		<header>
+					<header>
 		<h1><a href ="index.html">Bienvenue sur LylieFlex</a></h1>
 
 		<nav id="menu">
@@ -86,18 +91,38 @@
 		</nav>
 
 		</header>
-<section>
+			
+			<!--  début du bloc commentaires, version 1.0  (06 novembre 2009)-->
+<script language="JavaScript" type="text/javascript">
+    var sujet='general'; // les dix premiers caractères serviront d'identification de la liste des commentaires
+    var adressebase='';  // base d'adressage pour le fichier PHP de gestion des commentaires
+</script>
+<div id="laisseruncommentaire">
+    <form name="commentaire_bouton" id="commentaire_form_A" action="" method="" onsubmit="return false;" style="display: Block">
+        <input type="button" value="laisser un commentaire" onclick="Affiche_form_B()">
+    </form>
+    <form name="commentaire_saisie" id="commentaire_form_B" action="" method="" onsubmit="return false;" style="display: None">
+		<fieldset>
+        <legend>Vous pouvez saisir un commentaire ...</legend>
+			Votre nom (<i><small>ou pseudo</small></i>):<br><input name="nom" type="text" size="20"><br>
+			Saisissez le commentaire que vous voulez ajouter:<BR>
+			<textarea name="commentaire" cols="60" rows="4" wrap="soft"></textarea>
+			<input name="annuler" type="button" value="Annuler" onclick="Annuler()"><br>
+			<input name="envoyermodifier" type="button" value="Envoyer" onclick="Envoyer_modifier()">&nbsp;&nbsp;
+			<input name="terminer" type="button" value="Terminer" onclick="Terminer()" style="display: None">
+        </fieldset>
+    </form>
+    <div id="liste_des_messages">&nbsp;</div>
+</div>
+<script language="JavaScript" type="text/javascript" src="commentaires.js"></script>
+<!-- fin du bloc commentaires -->
 
-			<div data-aos="zoom-in" id="banniere_image_promotions">
-						<h1 class="no_stock_warning">Nous sommes désolé mais il semblerait que ce produit soit en rupture de stock !</h1>
-						<p><mark class="no_stock">Une nouvelle livraison arrivera très prochainement !</mark></p>
-			</div>
-			</section>
 
+<!--fin balise bloc_page -->
 		</div>
+
 <script>
   AOS.init();
 </script>
 	</body>
-
-</html>
+	</html>
