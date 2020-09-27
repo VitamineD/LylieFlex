@@ -2,3 +2,4 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://lylieflex.com/$1 [R=301,L]
 #Redirect permanent / https://lylieflex.com/
+AddDefaultCharset utf-8
